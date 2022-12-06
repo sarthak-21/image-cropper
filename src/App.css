@@ -78,6 +78,19 @@ body{
   justify-content: space-between;
 }
 
+@media screen and (max-width: 700px){
+  .view-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .box{
+    min-height: 500px;
+  }
+}
+
 /* 
 img-preview
 style={{ width: "100%", float: "left", height: "300px" }}
