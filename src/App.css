@@ -1,38 +1,90 @@
-.App {
+body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.App{
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.box {
+  display: inline-block;
+  padding: 10px;
+  box-sizing: border-box;
+  text-align: center;
+  min-width: 300px;
+}
+
+.img-preview {
+  overflow: hidden;
+}
+
+.button-style, .default-button, .input-button::before{
+  padding: 3% 5%;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 10px;
+  margin: 1% 0;
+}
+
+.button-style{
+  color: #eee;
+  background-color: #45ADFF;
+  border: 1px solid #45Adff;
+}
+
+.button-style:hover{
+  background-color: #008fff;
+}
+
+.default-button{
+  background-color: #eee;
+  color: #434242;
+  border: none;
+  padding: 1.5% 5%;
+  font-size: 0.8rem;
+}
+
+.default-button:hover{
+  background-color: #B2B2B2;
+  color: #111;
+}
+
+.input-button{
+  color: transparent;
+}
+
+.input-button::-webkit-file-upload-button{
+  visibility: hidden;
+}
+
+.input-button::before{
+  content: 'Upload for device';
+  color: #eee;
+  display: inline-block;
+  background-color: #45ADFF;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  outline: none;
+  width: 90%;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.view-div{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
 }
 
-.App-link {
-  color: #61dafb;
-}
+/* 
+img-preview
+style={{ width: "100%", float: "left", height: "300px" }}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+box
+style={{ width: "50%", float: "right" }}
+
+style={{ width: "50%", float: "right", height: "300px" }}
+
+*/
