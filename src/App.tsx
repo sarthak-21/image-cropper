@@ -66,13 +66,13 @@ function App() {
         <div className="view-div">
           <div className="box">
             <h3>Preview</h3>
-            <div style={{ width: "300px" }} className="img-preview" />
+            <div className="img-preview" />
             <button className="button-style" type="submit" onClick={getCropData}>Crop Image</button>
           </div>
 
-          <div className="box" style={{ width: "50%" }}>
+          <div className="box" style={{ paddingBottom: "7%" }}>
             <h3>Cropped Image</h3>
-            <img style={{ width: "300px" }} src={cropData} alt="cropped" />
+            <img style={{ width: "300px", height: "" }} src={cropData} alt="cropped" />
           </div>
         </div>
       </div>
